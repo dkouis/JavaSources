@@ -17,19 +17,21 @@ public class TeamA
 
     public void MethodForTeamA()
     {           
-        int x = 5 & 4;     // 101 & 100 = 100 (4) // and    
-        System.out.println("AND : " + x);
-        x = 5 | 4;  // 101 | 100 = 101 (5) // or
-        System.out.println("OR : " + x);
-        x = 5 ^ 4;  // 101 ^ 100 = 001 (1) // xor 
-        System.out.println("XOR : " + x);
-        x = 4 << 1; // 100 << 1  =1000 (8) // left shift
-        System.out.println("Shift left : " + x);
-        x = 4 >> 1; // 100 >> 1  =  10 (2) // right shift
-        System.out.println("Shift right : " + x);
-        x = 4 >>>1; // 100 >>>1  =  10 (2) // zero-fill right shift  
-        x = ~4;     // ~00000100 = 11111011 (-5) // invert
-        System.out.println("invert : " + x);
+
+             
+        int numbers[] = new int[]{32,43,53,54,32,65,63,98,43,23};
+        int variable1 = numbers[0];
+        int variable2 = numbers[0];       
+        for(int i=1; i<numbers.length; i++)
+        {
+          if(numbers[i] > variable1)
+            variable1 = numbers[i];
+          else if (numbers[i] < variable2)
+            variable2 = numbers[i];
+        }
+        System.out.println("Variable1 Number is : " + variable1);
+        System.out.println("Variable2 Number is : " + variable2);
+
     }
 }
 
