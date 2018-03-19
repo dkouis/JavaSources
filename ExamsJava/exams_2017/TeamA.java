@@ -2,7 +2,7 @@
 /**
  * Write a description of class TeamA here.
  *
- * @author (your name)
+ * @author (Dimitrios Kouis)
  * @version (a version number or a date)
  */
 public class TeamA
