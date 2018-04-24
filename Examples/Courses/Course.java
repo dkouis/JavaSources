@@ -1,3 +1,10 @@
+
+/**
+ * Γράψτε μια περιγραφή της κλάσης Course εδώ.
+ * 
+ * @author (Το όνομά σας) 
+ * @version (Αριθμός έκδοσης ή ημερομηνία εδώ)
+ */
 import java.util.InputMismatchException;
 import java.util.Scanner;
  
@@ -143,4 +150,13 @@ public class Course {
 			    "\n--------------------------------";
 	System.out.println(courseInfo);				
     }
+    public void printCourseFormatted(){
+        System.out.printf("---------------------------------%n");
+        System.out.printf("Title:.............%S%n",title);
+        System.out.printf("---------------------------------%n");
+    }
+    public void setLabGrade(){
+    
+    }
+    
 }
