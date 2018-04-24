@@ -97,6 +97,7 @@ public class Course {
        //lab grade only if lab=true
        if (lab)
        {
+	   tryAgain = true; 
            do {
             try {
                 System.out.println("> Enter the lab grade: 0-10");
